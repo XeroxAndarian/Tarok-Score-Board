@@ -245,7 +245,7 @@ class Igralec:
         else:
             sprememba = 0
             x = myround(tocke) - 35
-            sprememba += 2 * x
+            sprememba +=  x
             return sprememba
 
     def napovedi(self, sez):
