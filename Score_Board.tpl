@@ -69,10 +69,15 @@
             </td>
         </tr>
     </table>
-
+    
     <form action="/ScoreBoard/igralec/" method="POST">
             
         <input type="submit" value="Dodaj Partijo">
+    </form>
+
+    <form action="/" method="get">
+            
+        <input type="submit" value="Novi Igralci">
     </form>
     
 

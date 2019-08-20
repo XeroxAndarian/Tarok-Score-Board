@@ -797,6 +797,5 @@ def kustommm():
     igralci['player_2'] = model.Igralec(bottle.request.forms.p2, bottle.request.forms.t2, bottle.request.forms.r2)
     igralci['player_3'] = model.Igralec(bottle.request.forms.p3, bottle.request.forms.t3, bottle.request.forms.r3)
     igralci['player_4'] = model.Igralec(bottle.request.forms.p4, bottle.request.forms.t4, bottle.request.forms.r4)
-    bottle.redirect('/ScoreBoard/')
-    
+    bottle.redirect('/ScoreBoard/')   
 bottle.run(debug=True, reloader=True)
