@@ -277,7 +277,7 @@ class Igralec:
                 elif napoved == 'ZK':
                     sprememba += 20 
                 elif napoved == 'V':
-                    return 250
+                    return 500
                 elif napoved == 'BV':
                     return 125
         elif len(sez[1]) != 0:
@@ -291,7 +291,7 @@ class Igralec:
                 elif napoved == 'ZK':
                     sprememba -= 20 
                 elif napoved == 'V':
-                    return -250
+                    return -500
                 elif napoved == 'BV':
                     return -125
         return sprememba
