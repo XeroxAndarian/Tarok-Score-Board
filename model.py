@@ -92,20 +92,36 @@ class Igralec:
                     return
         elif 'VB' in napovedi[1]:
                 sprememba = -125
-                self.tocke += 2 * sprememba * (2 ** koeficient_kontra)
-                return
+                if self.dvojne_tocke():
+                    self.tocke += 2 * sprememba * (2 ** koeficient_kontra)
+                    return
+                else:
+                    self.tocke += sprememba * (2 ** koeficient_kontra)
+                    return
         elif 'V' in napovedi[0]:
                 sprememba = 500
-                self.tocke += 2 * sprememba * (2 ** koeficient_kontra)
-                return
+                if self.dvojne_tocke():
+                    self.tocke += 2 * sprememba * (2 ** koeficient_kontra)
+                    return
+                else:
+                    self.tocke += sprememba * (2 ** koeficient_kontra)
+                    return
         elif 'V' in napovedi[1]:
                 sprememba = -500
-                self.tocke += 2 * sprememba * (2 ** koeficient_kontra)
-                return
+                if self.dvojne_tocke():
+                    self.tocke += 2 * sprememba * (2 ** koeficient_kontra)
+                    return
+                else:
+                    self.tocke += sprememba * (2 ** koeficient_kontra)
+                    return
         elif 'V' in dodatki[0]:
                 sprememba = 250
-                self.tocke += 2 * sprememba * (2 ** koeficient_kontra)
-                return
+                if self.dvojne_tocke():
+                    self.tocke += 2 * sprememba * (2 ** koeficient_kontra)
+                    return
+                else:
+                    self.tocke += sprememba * (2 ** koeficient_kontra)
+                    return
         elif self.dvojne_tocke() == True:
             if self.zmaga(tocke):
                 sprememba += self.razlika_tock(tocke)
